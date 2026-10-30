@@ -1,0 +1,15 @@
+#include<stdio.h>
+void sq(int a);
+int main()
+{
+    int x;
+    printf("ENTER A NO:");
+    scanf("%d", &x);
+    sq(x);
+    return 0;
+}
+void sq(int a){
+    a=a*a;
+    printf("SQUARE===%d", a);
+
+}
