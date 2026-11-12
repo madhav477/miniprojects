@@ -1,0 +1,23 @@
+#include<stdio.h>
+void slicing(char slice[100], int n,int m);
+int main()
+{
+    char slice[100];
+    int n,m;
+    printf("SPACE TAB WILL BE INCLUDED AS CHARACTER OF STRING\n");
+    printf("ENTER STRING:");
+    fgets(slice,100,stdin);
+    printf("ENTER N:");
+    scanf("%d", &n);
+    printf("ENTER M:");                //TO UPLOAD
+    scanf("%d", &m);                         
+    slicing(slice,n,m);
+    return 0;
+}
+void slicing(char slice[100], int n,int m)
+{
+    for(n;n<=m;n++)
+    {
+        printf("%c", slice[n]);
+    }
+}
